@@ -1,0 +1,282 @@
+/* Tailwind CSS Configuration */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* カスタムフォント設定 */
+:where([class^="ri-"])::before { 
+    content: "\f3c2"; 
+}
+
+body { 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+}
+
+/* ハンバーガーメニューのアニメーション */
+#menu-bar-1,
+#menu-bar-2,
+#menu-bar-3 {
+    transition: all 0.3s ease;
+}
+
+/* モバイルメニューのスムーズな表示 */
+#mobile-menu {
+    transition: all 0.3s ease;
+}
+
+/* ドロップダウンのアニメーション */
+.dropdown-enter {
+    animation: dropdownEnter 0.2s ease forwards;
+}
+
+@keyframes dropdownEnter {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* フォーカス時のアウトライン改善 */
+button:focus,
+a:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #1e40af;
+    outline-offset: 2px;
+}
+
+/* スムーズスクロール */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 画像の最適化 */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* モバイルメニューのシャドウ */
+#mobile-menu {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* ボタンのホバーエフェクト改善 */
+button,
+.button {
+    transition: all 0.2s ease;
+}
+
+button:hover,
+.button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+button:active,
+.button:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* カードのホバーエフェクト */
+.hover\:shadow-md {
+    transition: box-shadow 0.2s ease;
+}
+
+/* リンクのアンダーラインアニメーション */
+a {
+    position: relative;
+    transition: color 0.2s ease;
+}
+
+/* ナビゲーションリンクのホバー効果 */
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #1e40af;
+    transition: all 0.2s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* フォームのフォーカス効果 */
+input:focus,
+textarea:focus,
+select:focus {
+    box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+}
+
+/* レスポンシブイメージ */
+.responsive-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* セクションの余白調整 */
+@media (max-width: 768px) {
+    section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+/* モバイルでのテキストサイズ最適化 */
+@media (max-width: 640px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+/* プリント時のスタイル */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+    
+    a {
+        text-decoration: underline;
+    }
+}
+
+/* ヘッダー固定表示のスタイル */
+header {
+    background-color: white;
+    width: 100%;
+}
+
+/* スクロール時の影 */
+header.shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* アクセシビリティ改善 */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* ローディングアニメーション */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #1e40af;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ===============================================
+   EXTRACTED CSS FROM HTML FILES
+   =============================================== */
+
+/* ===============================================
+   FORM ELEMENTS & INPUT STYLING
+   =============================================== */
+/* Input and textarea focus states */
+input, textarea { 
+    outline: none; 
+}
+
+input:focus, textarea:focus { 
+    border-color: #1e40af; 
+}
+
+/* ===============================================
+   CUSTOM CHECKBOXES
+   =============================================== */
+/* Custom checkbox styling for forms */
+.custom-checkbox {
+    appearance: none;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 2px solid #d1d5db;
+    border-radius: 4px;
+    background: white;
+    position: relative;
+    cursor: pointer;
+}
+
+.custom-checkbox:checked {
+    background: #1e40af;
+    border-color: #1e40af;
+}
+
+.custom-checkbox:checked::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+/* ===============================================
+   PRICE TABLES
+   =============================================== */
+/* Pricing table structure and styling */
+.price-table { 
+    border-collapse: separate; 
+    border-spacing: 0; 
+}
+
+.price-table th, .price-table td { 
+    border: 1px solid #e5e7eb; 
+}
+
+.price-table th:first-child, .price-table td:first-child { 
+    border-left: none; 
+}
+
+.price-table th:last-child, .price-table td:last-child { 
+    border-right: none; 
+}
+
+.price-table thead th:first-child { 
+    border-top-left-radius: 8px; 
+}
+
+.price-table thead th:last-child { 
+    border-top-right-radius: 8px; 
+}
+
+.price-table tbody tr:last-child td:first-child { 
+    border-bottom-left-radius: 8px; 
+}
+
+.price-table tbody tr:last-child td:last-child { 
+    border-bottom-right-radius: 8px; 
+}

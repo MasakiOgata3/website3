@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>料金案内 - 尾形社会保険労務士事務所</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+</head>
+<body class="bg-white text-gray-900">
+<header class="bg-white shadow-sm border-b border-gray-100">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex items-center">
+<div>
+<h1 class="text-xl font-bold text-gray-900">尾形社会保険労務士事務所</h1>
+<p class="text-sm text-gray-600">労務管理・人事のプロフェッショナル</p>
+</div>
+</div>
+<div class="flex items-center space-x-8">
+<div class="text-right">
+<div class="flex items-center text-primary font-bold text-xl">
+<div class="w-6 h-6 flex items-center justify-center mr-2">
+<i class="ri-phone-line"></i>
+</div>
+03-6824-6886
+</div>
+<p class="text-sm text-gray-600">受付時間：平日 9:00-18:00</p>
+</div>
+</div>
+</div>
+<nav class="border-t border-gray-100">
+<!-- ハンバーガーメニューボタン（モバイルのみ表示） -->
+<button class="md:hidden flex items-center justify-between w-full px-4 py-4 text-gray-700 hover:text-primary transition-colors" id="menu-toggle">
+<span class="font-semibold">メニュー</span>
+<div class="w-6 h-6 flex flex-col justify-center space-y-1">
+<span class="block w-full h-0.5 bg-gray-700 transition-all duration-300" id="menu-bar-1"></span>
+<span class="block w-full h-0.5 bg-gray-700 transition-all duration-300" id="menu-bar-2"></span>
+<span class="block w-full h-0.5 bg-gray-700 transition-all duration-300" id="menu-bar-3"></span>
+</div>
+</button>
+<!-- デスクトップメニュー -->
+<div class="hidden md:flex space-x-4 md:space-x-8 py-4 px-4 md:px-0" id="desktop-menu">
+<a href="index.html" class="text-gray-700 hover:text-primary transition-colors px-3 py-2 rounded-button">ホーム</a>
+<a href="services.html" class="text-gray-700 hover:text-primary transition-colors px-3 py-2 rounded-button">サービス</a>
+<a href="pricing.html" class="text-primary font-semibold px-3 py-2 rounded-button">料金案内</a>
+<a href="case-studies.html" class="text-gray-700 hover:text-primary transition-colors px-3 py-2 rounded-button">事例紹介</a>
+<a href="company.html" class="text-gray-700 hover:text-primary transition-colors px-3 py-2 rounded-button">会社概要</a>
+<a href="contact.html" class="text-gray-700 hover:text-primary transition-colors px-3 py-2 rounded-button">お問い合わせ</a>
+</div>
+<!-- モバイルメニュー -->
+<div class="hidden md:hidden bg-white border-t border-gray-100" id="mobile-menu">
+<div class="flex flex-col py-2">
+<a href="index.html" class="text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors px-6 py-3">ホーム</a>
+<a href="services.html" class="text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors px-6 py-3">サービス</a>
+<a href="pricing.html" class="text-primary font-semibold hover:bg-gray-50 transition-colors px-6 py-3">料金案内</a>
+<a href="case-studies.html" class="text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors px-6 py-3">事例紹介</a>
+<a href="company.html" class="text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors px-6 py-3">会社概要</a>
+<a href="contact.html" class="text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors px-6 py-3">お問い合わせ</a>
+</div>
+</div>
+</nav>
+</div>
+</header>
+<section class="relative min-h-[400px] flex items-center" style="background-image: url('https://readdy.ai/api/search-image?query=Modern%20corporate%20office%20interior%20with%20elegant%20workspace%2C%20minimalist%20white%20desk%20setup%2C%20financial%20documents%20neatly%20arranged%2C%20professional%20calculator%2C%20business%20charts%20on%20wall%2C%20natural%20sunlight%20through%20large%20windows%2C%20creating%20bright%20and%20welcoming%20atmosphere%2C%20clean%20and%20organized%20environment%20perfect%20for%20financial%20consultation&width=1200&height=400&seq=pricing002&orientation=landscape'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-transparent"></div>
+<div class="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-2xl">
+<nav class="text-sm text-gray-600 mb-4">
+<a href="index.html" class="hover:text-primary">ホーム</a>
+<span class="mx-2">/</span>
+<span class="text-gray-900">料金案内</span>
+</nav>
+<h2 class="text-5xl font-bold text-gray-900 mb-6">料金案内</h2>
+<p class="text-xl text-gray-700 leading-relaxed">
+透明性のある料金体系で、<br>
+企業規模に応じた最適なサービスをご提供いたします。
+</p>
+</div>
+</div>
+</section>
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h3 class="text-4xl font-bold text-gray-900 mb-4">顧問契約料金</h3>
+<p class="text-xl text-gray-600">従業員数に応じた月額顧問料金をご案内いたします</p>
+</div>
+<div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm mb-12">
+<table class="price-table w-full">
+<thead>
+<tr class="bg-primary text-white">
+<th class="px-6 py-4 text-left font-bold">従業員数</th>
+<th class="px-6 py-4 text-center font-bold">月額料金（税込）</th>
+</tr>
+</thead>
+<tbody class="bg-white">
+<tr class="border-b border-gray-100">
+<td class="px-6 py-4 font-semibold text-gray-900">基本料金</td>
+<td class="px-6 py-4 text-center text-2xl font-bold text-primary">12,000円</td>
+</tr>
+<tr class="border-b border-gray-100">
+<td class="px-6 py-4 font-semibold text-gray-900">従業員単価<br><span class="text-sm text-gray-600">（社長・パート含む）</span></td>
+<td class="px-6 py-4 text-center text-2xl font-bold text-primary">1,000円/名</td>
+</tr>
+<tr>
+<td class="px-6 py-4 font-semibold text-gray-900">計算例</td>
+<td class="px-6 py-4 text-center text-gray-700" colspan="2">
+従業員10名の場合：基本料金(12,000円) + 従業員単価(1,000円 × 10名) = 22,000円/月<br>
+<span class="text-sm text-gray-600">※ 合計金額が15,000円未満の場合は、最低料金の15,000円/月となります</span><br>
+<span class="text-sm text-gray-600">例）従業員2名の場合：基本料金(12,000円) + 従業員単価(1,000円 × 2名) = 14,000円 → 最低料金の15,000円/月を適用</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-gray-50 p-8 rounded-xl">
+<h4 class="text-2xl font-bold text-gray-900 mb-6">基本サービス内容</h4>
+<ul class="space-y-3">
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center mr-3 mt-0.5">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">社会保険・労働保険の新規加入・変更・喪失手続き</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center mr-3 mt-0.5">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">労働保険年度更新・社会保険算定基礎届</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center mr-3 mt-0.5">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">労務管理に関する相談対応</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center mr-3 mt-0.5">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">労働法改正情報の提供</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center mr-3 mt-0.5">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">各種助成金情報の提供</span>
+</li>
+</ul>
+</div>
+<div class="bg-gray-50 p-8 rounded-xl">
+<h4 class="text-2xl font-bold text-gray-900 mb-6">オプションサービス</h4>
+<div class="space-y-4">
+<div class="flex justify-between items-center py-2 border-b border-gray-200">
+<span class="text-gray-700">給与計算代行</span>
+<span class="font-bold text-primary">基本料金 5,000円 + 1,000円/名</span>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-gray-200">
+<span class="text-gray-700">年末調整代行（1名あたり）</span>
+<span class="font-bold text-primary">3,300円</span>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-gray-200">
+<span class="text-gray-700">36協定作成・届出</span>
+<span class="font-bold text-primary">22,000円</span>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-gray-200">
+<span class="text-gray-700">労働基準監督署対応</span>
+<span class="font-bold text-primary">55,000円～</span>
+</div>
+<div class="flex justify-between items-center py-2">
+<span class="text-gray-700">緊急労務相談対応</span>
+<span class="font-bold text-primary">11,000円/回</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h3 class="text-4xl font-bold text-gray-900 mb-4">単発業務料金</h3>
+<p class="text-xl text-gray-600">必要な時だけご利用いただける単発サービスです</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-lg mb-6">
+<i class="ri-file-text-line text-2xl text-primary"></i>
+</div>
+<h4 class="text-xl font-bold text-gray-900 mb-4">就業規則作成・改定</h4>
+<div class="space-y-3 mb-6">
+<div class="flex justify-between">
+<span class="text-gray-700">新規作成</span>
+<span class="font-bold text-primary">220,000円～</span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-700">部分改定</span>
+<span class="font-bold text-primary">55,000円～</span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-700">全面改定</span>
+<span class="font-bold text-primary">165,000円～</span>
+</div>
+</div>
+<p class="text-sm text-gray-600">企業規模・業種により料金が変動します</p>
+</div>
+<div class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-lg mb-6">
+<i class="ri-shield-check-line text-2xl text-primary"></i>
+</div>
+<h4 class="text-xl font-bold text-gray-900 mb-4">社会保険・労働保険</h4>
+<div class="space-y-3 mb-6">
+<div class="flex justify-between">
+<span class="text-gray-700">新規適用手続き</span>
+<span class="font-bold text-primary">33,000円</span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-700">資格取得・喪失</span>
+<span class="font-bold text-primary">5,500円/件</span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-700">算定基礎届</span>
+<span class="font-bold text-primary">22,000円～</span>
+</div>
+</div>
+<p class="text-sm text-gray-600">手続き件数により料金が変動します</p>
+</div>
+<div class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-lg mb-6">
+<i class="ri-team-line text-2xl text-primary"></i>
+</div>
+<h4 class="text-xl font-bold text-gray-900 mb-4">人事制度構築</h4>
+<div class="space-y-3 mb-6">
+<div class="flex justify-between">
+<span class="text-gray-700">評価制度設計</span>
+<span class="font-bold text-primary">330,000円～</span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-700">賃金制度設計</span>
+<span class="font-bold text-primary">440,000円～</span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-700">教育研修制度</span>
+<span class="font-bold text-primary">220,000円～</span>
+</div>
+</div>
+<p class="text-sm text-gray-600">企業規模・要件により料金が変動します</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h3 class="text-4xl font-bold text-gray-900 mb-4">助成金申請支援料金</h3>
+<p class="text-xl text-gray-600">成功報酬制で安心してご依頼いただけます</p>
+<p class="text-base text-red-600 mt-2">※ スポット（単発）での助成金申請は受け付けておりません</p>
+</div>
+<div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm mb-12">
+<table class="price-table w-full">
+<thead>
+<tr class="bg-primary text-white">
+<th class="px-6 py-4 text-left font-bold">助成金申請支援</th>
+<th class="px-6 py-4 text-center font-bold">着手金</th>
+<th class="px-6 py-4 text-center font-bold">成功報酬</th>
+<th class="px-6 py-4 text-left font-bold">備考</th>
+</tr>
+</thead>
+<tbody class="bg-white">
+<tr>
+<td class="px-6 py-4 font-semibold text-gray-900">全ての助成金</td>
+<td class="px-6 py-4 text-center text-gray-700">無料</td>
+<td class="px-6 py-4 text-center font-bold text-primary">支給額の20%＋消費税</td>
+<td class="px-6 py-4 text-gray-700">下記の対応可能な助成金一覧をご確認ください</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-blue-50 p-8 rounded-xl">
+<h4 class="text-2xl font-bold text-gray-900 mb-6">対応可能な助成金一覧</h4>
+<div class="grid grid-cols-1 gap-3">
+<div class="flex items-center">
+<div class="w-6 h-6 flex items-center justify-center mr-3">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">キャリアアップ助成金</span>
+</div>
+<div class="flex items-center">
+<div class="w-6 h-6 flex items-center justify-center mr-3">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">人材開発支援助成金</span>
+</div>
+<div class="flex items-center">
+<div class="w-6 h-6 flex items-center justify-center mr-3">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">両立支援等助成金</span>
+</div>
+<div class="flex items-center">
+<div class="w-6 h-6 flex items-center justify-center mr-3">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">働き方改革推進支援助成金</span>
+</div>
+<div class="flex items-center">
+<div class="w-6 h-6 flex items-center justify-center mr-3">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">65歳超雇用推進助成金</span>
+</div>
+<div class="flex items-center">
+<div class="w-6 h-6 flex items-center justify-center mr-3">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">業務改善助成金</span>
+</div>
+</div>
+</div>
+<div class="bg-green-50 p-8 rounded-xl">
+<h4 class="text-2xl font-bold text-gray-900 mb-6">助成金申請の流れ</h4>
+<div class="space-y-4">
+<div class="flex items-start">
+<div class="w-8 h-8 flex items-center justify-center bg-primary text-white rounded-full mr-4 mt-1 text-sm font-bold">1</div>
+<div>
+<h5 class="font-bold text-gray-900 mb-1">無料診断・相談</h5>
+<p class="text-gray-700 text-sm">企業の状況を確認し、適用可能な助成金を診断</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-8 h-8 flex items-center justify-center bg-primary text-white rounded-full mr-4 mt-1 text-sm font-bold">2</div>
+<div>
+<h5 class="font-bold text-gray-900 mb-1">申請書類作成</h5>
+<p class="text-gray-700 text-sm">必要書類の準備・作成を代行</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-8 h-8 flex items-center justify-center bg-primary text-white rounded-full mr-4 mt-1 text-sm font-bold">3</div>
+<div>
+<h5 class="font-bold text-gray-900 mb-1">申請・フォロー</h5>
+<p class="text-gray-700 text-sm">申請手続き・審査対応まで完全サポート</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-8 h-8 flex items-center justify-center bg-primary text-white rounded-full mr-4 mt-1 text-sm font-bold">4</div>
+<div>
+<h5 class="font-bold text-gray-900 mb-1">支給決定・報酬</h5>
+<p class="text-gray-700 text-sm">支給決定後に成功報酬をお支払い</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h3 class="text-4xl font-bold text-gray-900 mb-4">よくある質問</h3>
+<p class="text-xl text-gray-600">料金に関してよくいただくご質問をまとめました</p>
+</div>
+<div class="max-w-4xl mx-auto">
+<div class="space-y-4">
+<div class="bg-white border border-gray-200 rounded-xl">
+<button class="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors faq-toggle">
+<span class="text-lg font-semibold text-gray-900">顧問契約の最低契約期間はありますか？</span>
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-add-line text-xl text-gray-400 faq-icon"></i>
+</div>
+</button>
+<div class="px-8 pb-6 text-gray-700 leading-relaxed faq-content" style="display: none;">
+最低契約期間は1年間となっております。ただし、サービス内容にご満足いただけない場合は、3ヶ月前のご通知により契約を終了することができます。
+</div>
+</div>
+<div class="bg-white border border-gray-200 rounded-xl">
+<button class="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors faq-toggle">
+<span class="text-lg font-semibold text-gray-900">料金の支払い方法はどのようになりますか？</span>
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-add-line text-xl text-gray-400 faq-icon"></i>
+</div>
+</button>
+<div class="px-8 pb-6 text-gray-700 leading-relaxed faq-content" style="display: none;">
+月額顧問料は毎月当月分を22日から24日頃に口座振替にてお支払いいただきます。単発業務は完了後にご請求いたします。
+</div>
+</div>
+<div class="bg-white border border-gray-200 rounded-xl">
+<button class="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors faq-toggle">
+<span class="text-lg font-semibold text-gray-900">従業員数が変動した場合の料金はどうなりますか？</span>
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-add-line text-xl text-gray-400 faq-icon"></i>
+</div>
+</button>
+<div class="px-8 pb-6 text-gray-700 leading-relaxed faq-content" style="display: none;">
+1年ごとに従業員数をカウントし、料金の見直しを行わせていただきます。
+</div>
+</div>
+<div class="bg-white border border-gray-200 rounded-xl">
+<button class="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors faq-toggle">
+<span class="text-lg font-semibold text-gray-900">助成金が不支給になった場合の費用はかかりますか？</span>
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-add-line text-xl text-gray-400 faq-icon"></i>
+</div>
+</button>
+<div class="px-8 pb-6 text-gray-700 leading-relaxed faq-content" style="display: none;">
+成功報酬制のため、助成金が不支給となった場合は成功報酬をいただきません。ただし、着手金が設定されている助成金については、不支給の場合でも着手金のみお支払いいただきます。
+</div>
+</div>
+<div class="bg-white border border-gray-200 rounded-xl">
+<button class="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors faq-toggle">
+<span class="text-lg font-semibold text-gray-900">追加料金が発生するのはどのような場合ですか？</span>
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-add-line text-xl text-gray-400 faq-icon"></i>
+</div>
+</button>
+<div class="px-8 pb-6 text-gray-700 leading-relaxed faq-content" style="display: none;">
+基本契約に含まれない業務（給与計算代行、就業規則作成・変更、特別な労務相談、緊急対応など）をご依頼いただく場合に追加料金が発生します。事前にお見積りをご提示し、ご了承いただいてから作業を開始いたします。
+</div>
+</div>
+<div class="bg-white border border-gray-200 rounded-xl">
+<button class="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors faq-toggle">
+<span class="text-lg font-semibold text-gray-900">契約前に詳細な見積もりをもらうことはできますか？</span>
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-add-line text-xl text-gray-400 faq-icon"></i>
+</div>
+</button>
+<div class="px-8 pb-6 text-gray-700 leading-relaxed faq-content" style="display: none;">
+はい、無料相談時に企業の状況をお聞きし、詳細なお見積りをご提示いたします。サービス内容や料金についてご不明な点がございましたら、お気軽にお問い合わせください。
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-primary">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<h3 class="text-4xl font-bold text-white mb-6">料金についてご相談ください</h3>
+<p class="text-xl text-blue-100 mb-8">企業の状況に応じた最適なプランをご提案いたします。まずは無料相談をご利用ください。</p>
+<div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
+<div class="flex items-center text-white">
+<div class="w-8 h-8 flex items-center justify-center mr-3">
+<i class="ri-phone-line text-2xl"></i>
+</div>
+<div class="text-left">
+<div class="text-2xl font-bold">03-6824-6886</div>
+<div class="text-sm text-blue-100">平日 9:00-18:00</div>
+</div>
+</div>
+<a href="contact.html" class="bg-white text-primary px-8 py-4 !rounded-button font-semibold hover:bg-gray-100 transition-colors whitespace-nowrap">
+お問い合わせはこちら
+</a>
+</div>
+</div>
+</section>
+<footer class="bg-gray-900 text-white py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+<div>
+<h5 class="font-bold text-lg mb-4">尾形社会保険労務士事務所</h5>
+<p class="text-gray-400 text-sm leading-relaxed">
+企業の人事労務を総合的にサポートする社会保険労務士事務所です。
+</p>
+</div>
+<div>
+<h5 class="font-bold text-lg mb-4">サービス</h5>
+<ul class="space-y-2 text-sm">
+<li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">社会保険手続き</a></li>
+<li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">労働保険手続き</a></li>
+<li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">人事制度構築</a></li>
+<li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">労務相談・顧問</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-lg mb-4">会社情報</h5>
+<ul class="space-y-2 text-sm">
+<li><a href="company.html" class="text-gray-400 hover:text-white transition-colors">会社概要</a></li>
+<li><a href="pricing.html" class="text-gray-400 hover:text-white transition-colors">料金案内</a></li>
+<li><a href="case-studies.html" class="text-gray-400 hover:text-white transition-colors">事例紹介</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-lg mb-4">お問い合わせ</h5>
+<div class="space-y-3 text-sm">
+<div class="flex items-center">
+<div class="w-4 h-4 flex items-center justify-center mr-3">
+<i class="ri-phone-line text-primary"></i>
+</div>
+<span class="text-gray-400">03-6824-6886</span>
+</div>
+<div class="flex items-center">
+<div class="w-4 h-4 flex items-center justify-center mr-3">
+<i class="ri-mail-line text-primary"></i>
+</div>
+<span class="text-gray-400">info@ogata-offices.com</span>
+</div>
+<div class="flex items-start">
+<div class="w-4 h-4 flex items-center justify-center mr-3 mt-1">
+<i class="ri-map-pin-line text-primary"></i>
+</div>
+<span class="text-gray-400">〒175-0093<br>東京都板橋区赤塚新町3-32-11-805</span>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+<div class="flex space-x-6 text-sm mb-4 md:mb-0">
+<a href="#" class="text-gray-400 hover:text-white transition-colors">プライバシーポリシー</a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors">特定商取引法に基づく表記</a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors">サイトマップ</a>
+</div>
+<p class="text-gray-400 text-sm">© 2025 尾形社会保険労務士事務所. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</body>
+</html>
